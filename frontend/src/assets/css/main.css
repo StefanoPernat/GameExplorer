@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+
+:root {
+    --main-background: #A7AAA4;
+    --text-color: #595959;
+}
+
+body {
+    background-color: var(--main-background);
+    font-family: 'Inconsolata', monospace;
+}
+
+nav {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--text-color);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 20pt;
+    background-image: url('../img/bullet.png');
+    background-repeat: no-repeat;
+    background-position: 0.4em;
+    padding-left: 1.5em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--text-color);
+
+}
