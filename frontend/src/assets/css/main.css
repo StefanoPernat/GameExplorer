@@ -34,12 +34,6 @@ nav li {
     padding-left: 1.5em;
 }
 
-nav li:hover {
-    background-image: url('../img/bulletHover.png');
-    background-repeat: no-repeat;
-    background-position: 0.4em;
-}
-
 nav li a {
     text-decoration: none;
     color: var(--text-color);
@@ -47,6 +41,5 @@ nav li a {
 }
 
 nav li a:hover {
-    text-decoration: none;
-    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
 }
