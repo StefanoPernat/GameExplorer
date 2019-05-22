@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Home
+    Home {{ keyWatcher }}
   </div>
 </template>
 
@@ -15,7 +15,11 @@ export default {
   computed: {
     ...mapState([
       'offers'
-    ])
+    ]),
+    keyWatcher: function () {
+      console.log('aaa')
+      return process.env.VUE_APP_PREVIEW_KEY
+    }
   }
 
 }
