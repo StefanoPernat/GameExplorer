@@ -2,5 +2,5 @@ package server
 
 const (
 	//Port is the server port where to listem
-	Port int = 8080
+	Port int = 8081
 )
