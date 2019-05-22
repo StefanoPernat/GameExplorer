@@ -7,6 +7,7 @@
 <script>
 
 import { mapState } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   data () {
@@ -16,10 +17,15 @@ export default {
     ...mapState([
       'offers'
     ]),
+    ...mapActions([
+      'fetchDeals'
+    ]),
     keyWatcher: function () {
-      console.log('aaa')
       return process.env.VUE_APP_PREVIEW_KEY
     }
+  },
+  mounted () {
+    this.fetchDeals()
   }
 
 }
