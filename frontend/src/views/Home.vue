@@ -6,7 +6,17 @@
 
 <script>
 
+import { mapState } from 'vuex'
+
 export default {
-  name: 'home'
+  data () {
+    return {}
+  },
+  computed: {
+    ...mapState([
+      'offers'
+    ])
+  }
+
 }
 </script>
